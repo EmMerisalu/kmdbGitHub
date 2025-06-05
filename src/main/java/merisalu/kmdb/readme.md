@@ -236,9 +236,8 @@ PATCH /api/genres/{id}
 DELETE /api/genres/{id}?force=true
     Delete a genre (force optional)
 
-
+## 📂 Project Structure  
 ```text
-📂 Project Structure  
 src/main/java/merisalu/kmdb/  
 │  
 ├── config/            # Configuration classes (e.g., StartupCleanupRunner)  
