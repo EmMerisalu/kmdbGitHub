@@ -154,7 +154,7 @@ GET /api/movies?page=0&size=100
 GET /api/movies?page=0&size=100&sort=releaseYear,asc
 
     Returns all movies in ascending order sorted by defined (Variable)
-    (Increase size=100 if more then 100 movie elements are present)
+    (Increase size=100 if more then 100 movie elements are present up to 149)
     (Replace sort=(Variable),asc with sort=(Duration/Title/id/releaseYear),asc)
 
     Example: http://localhost:8080/api/movies?page=0&size=100&sort=releaseYear,asc
@@ -212,7 +212,7 @@ PATCH /api/actors/batch
         {
         "id": 13,
         "name": "Florence Pugh",
-        "birthDate": "1996-01-04"  // Changed birthDate by one day
+        "birthDate": "1996-01-04"
         },
         {
         "id": 7,
