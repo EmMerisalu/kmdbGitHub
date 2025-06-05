@@ -237,16 +237,18 @@ DELETE /api/genres/{id}?force=true
     Delete a genre (force optional)
 
 
-📂 Project Structure
-src/main/java/merisalu/kmdb/
-│
-├── config/            # Configuration classes (e.g., StartupCleanupRunner)
-├── controller/        # REST controllers
-├── dto/               # Data transfer objects
-├── exception/         # Custom exceptions
-├── mapper/            # Entity-DTO mappers
-├── model/             # JPA entities
-├── repository/        # Spring Data JPA repositories
-├── service/           # Service interfaces
-├── service/impl/      # Service implementations
-└── KmdbApplication.java  # Main Spring Boot application
+```text
+📂 Project Structure  
+src/main/java/merisalu/kmdb/  
+│  
+├── config/            # Configuration classes (e.g., StartupCleanupRunner)  
+├── controller/        # REST controllers  
+├── dto/               # Data transfer objects  
+├── exception/         # Custom exceptions  
+├── mapper/            # Entity-DTO mappers  
+├── model/             # JPA entities  
+├── repository/        # Spring Data JPA repositories  
+├── service/           # Service interfaces  
+├── service/impl/      # Service implementations  
+└── KmdbApplication.java  # Main Spring Boot application  
+```
