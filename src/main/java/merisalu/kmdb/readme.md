@@ -62,7 +62,6 @@ A full-featured RESTful API for managing a movie database, built using **Spring 
     mvn -v
 
     ✅Linux (Debian/Ubuntu)
-
     sudo apt update
     sudo apt install maven
     Test:
@@ -70,7 +69,6 @@ A full-featured RESTful API for managing a movie database, built using **Spring 
 
 - SQLite (required as the database engine)
     ✅Windows:
-
         Download the SQLite tools ZIP (under Precompiled Binaries for Windows).
         Extract the files and add the folder to your system’s PATH variable.
         Open Command Prompt and run sqlite3 to verify the installation.
@@ -83,28 +81,25 @@ A full-featured RESTful API for managing a movie database, built using **Spring 
         sudo apt update
         sudo apt install sqlite3
 
-        Verify Installation (All OS):
+    ✅Verify Installation (All OS):
         sqlite3 --version
 
 
 ### Installation
 
-1. **Clone the repository**
-
-```bash
-git clone https://github.com/your-username/kmdb.git
-cd kmdb
-
-Build the project:
+📦 Clone the project:
+    git clone https://gitea.kood.tech/erikmartinmerisalu/kmdb.git
+    cd kmdb
+🛠 Build the project:
     mvn clean install
 
-Run the application:
+🚀 Run the application:
     mvn spring-boot:run
 
-Access the API
+🌐Access the API
     Visit: http://localhost:8080/api
 
-🛠️ Usage
+### 🛠️ Usage
 
 Creating a Movie 🎬:
     POST /api/movies
@@ -125,7 +120,6 @@ Creating a Genre 🏷️ :
 "name": "Sci-Fi"
 }
 
-
 Creating an Actor 🎭:
     POST /api/actors
     Request Body raw(JSON) example:
@@ -134,29 +128,26 @@ Creating an Actor 🎭:
 "name": "Leonardo DiCaprio"
 }
 
-📡 API Endpoints
+### 📡 API Endpoints
 
 ## Postman Collection
-
-A Postman collection for testing the Movie Database API is included in the `/postman` folder.
+A Postman collection for testing the Movie Database API is included in the `kmdb\src\main\java\merisalu\kmdb` folder.
 
 To use it:
 1. Open Postman.
 2. Click on **Import**.
-3. Select the `movie-database-api.postman_collection.json` file from the `/postman` folder.
+3. Select the `movie-database-api.postman_collection.json` file from the `kmdb\src\main\java\merisalu\kmdb` folder.
 4. Start sending requests to test the API endpoints.
 
-🎬 Movies
+## 🎬 Movies
 
 GET /api/movies?page=0&size=100
     Get all movies (Increase size=100 if more then 100 movie elements are present)
 
 GET /api/movies?page=0&size=100&sort=releaseYear,asc
-
     Returns all movies in ascending order sorted by defined (Variable)
     (Increase size=100 if more then 100 movie elements are present up to 149)
     (Replace sort=(Variable),asc with sort=(Duration/Title/id/releaseYear),asc)
-
     Example: http://localhost:8080/api/movies?page=0&size=100&sort=releaseYear,asc
 
 GET /api/movies/{id}
@@ -186,7 +177,7 @@ PATCH /api/movies/{id}
 DELETE /api/movies/{id}?force=true
     Delete a movie (force optional)
 
-🎭 Actors
+## 🎭 Actors
 
 GET /api/actors
     Get a list of all actors
@@ -225,7 +216,7 @@ PATCH /api/actors/batch
 DELETE /api/actors/{id}?force=true
     Delete an actor (force optional)
 
-🏷️ Genres
+## 🏷️ Genres
 
 GET /api/genres
     Get a list of all genres
